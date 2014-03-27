@@ -8,7 +8,7 @@
  * Modified  by Mitra Ardron <mitra@mitra.biz> 
  * Added Sanyo and Mitsubishi controllers
  * Modified Sony to spot the repeat codes that some Sony's send
- * Modified by Gaspard van Koningsveld to trim out IRrecv, simplify code, allow setting of IR LED pin, and make it compatible with the Spark Core v1.0 (STM32F103CB based)
+ * Modified by Gaspard van Koningsveld to trim out IRrecv, not using PWM anymore, allow setting of IR LED pin, and make it compatible with the Spark Core v1.0 (STM32F103CB based)
  *
  * Interrupt code based on NECIRrcv by Joe Knapp
  * http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1210243556
@@ -278,6 +278,7 @@ void IRsend::space(int time) {
 
 void IRsend::enableIROut(int khz) {
   // Enables IR output.  The khz value controls the modulation frequency in kilohertz.
+  // MAX frequency is 166khz.
   pinMode(irPin, OUTPUT);
   digitalWrite(irPin, LOW);
 
