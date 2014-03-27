@@ -14,6 +14,13 @@ Modifications
 Usage examples
 --------------
 
-You can look at usages examples for sending on the original library for various TVs: [https://github.com/shirriff/Arduino-IRremote/tree/master/examples](https://github.com/shirriff/Arduino-IRremote/tree/master/examples)
+**WARNING**: The library has the same usage as the original IRremote, except that the constructor takes the pin as first argument: `IRsend(int irPin);`. For example, if you want to instanciate the class (on the stack) for the pin D1 use: `IRsend irsend(D1);`.
 
-I used it to control my Roomba using this gist: [https://gist.github.com/probonopd/5181021](https://gist.github.com/probonopd/5181021)
+You can look at usages examples for sending on the original library for various TVs (make sure you make the change in the above warning for the examples to work): [https://github.com/shirriff/Arduino-IRremote/tree/master/examples](https://github.com/shirriff/Arduino-IRremote/tree/master/examples)
+
+I used it to control my Roomba using this gist (make sure you make the change in the above warning for the examples to work): [https://gist.github.com/probonopd/5181021](https://gist.github.com/probonopd/5181021)
+
+Help
+----
+
+If you don't understand what this library does, how to use it, what is a Spark Core or what is infrared remote codes, look at this wiki [help page](git@github.com:qwertzguy/Spark-Core-IRremote.wiki.git).
