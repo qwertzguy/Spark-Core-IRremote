@@ -23,4 +23,4 @@ I used it to control my Roomba using this gist (make sure you make the change in
 Help
 ----
 
-If you don't understand what this library does, how to use it, what is a Spark Core or what is infrared remote codes, look at this wiki [help page](git@github.com:qwertzguy/Spark-Core-IRremote.wiki.git).
+If you don't understand what this library does, how to use it, what is a Spark Core or what is infrared remote codes, look at this wiki [help page](https://github.com/qwertzguy/Spark-Core-IRremote/wiki/Help).
